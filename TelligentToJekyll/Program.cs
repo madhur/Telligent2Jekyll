@@ -23,10 +23,13 @@ namespace TelligentToJekyll
             {
                 List<MappingEntry> sampleYaml=jekyllFiles.GetSampleYaml();
 
-                string newYaml = jekyllFiles.SetYaml(post, sampleYaml);
+                List<MappingEntry> newYaml = jekyllFiles.SetYaml(post, sampleYaml);
 
+                string filename = jekyllFiles.GenerateFileName(post);
 
+                jekyllFiles.GenerateFileOutput(post, filename, newYaml, "description");
 
+                Console.WriteLine("{0} written successfully", filename);
             }
 
             Console.ReadLine();
