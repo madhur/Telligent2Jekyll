@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using JekyllLib;
 using MetaBlog;
-using BlogManager.ObjectModel;
+//using BlogManager.ObjectModel;
 using QiHe.Yaml.Grammar;
 
 namespace TelligentToJekyll
